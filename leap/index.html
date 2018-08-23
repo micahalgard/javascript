@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Leap Year checker</title>
+    <style>
+      #main {
+        width: 500px;
+      }
+      .box {
+       
+      }
+      .container {
+        width: 300px;;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .button {
+        margin: 10px;
+        width: 50px;
+      }
+      .total {
+        float: left;
+      }
+      .toclear {
+        clear: both;
+      }
+      #answer-box{
+          background-color: #fff;
+          border: #000 solid 1px;
+          padding: 10px;
+      }
+      .answer{
+          color: #000;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 400;
+      }
+
+    </style>
+  </head>
+  <body>
+   
+    <h1>Leap Year checker</h1>
+
+    <div id="main">
+      <div class="container">
+        <input type="text" id="yearInput" class="box" onkeypress="return"/>
+        <input id="buttonPress" class="button" type="button" value="Check" href="#" />
+        <div class="toclear"></div>
+      </div>
+
+      <div class="container">
+          <h2>Is it a leap year?</h2>
+        <div id="answer-box">
+            <p id="answer" class="answer true">Yes</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts4.js"></script>
+</html>
