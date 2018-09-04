@@ -1,9 +1,9 @@
-var Year = require('./leap');
+var Year = require('./leap'); //assign Year to Year in leap.js
 
 describe('Leap year', function () {
   it('is not very common', function () {
-    var year = new Year(2015);
-    expect(year.isLeap()).toBe(false);
+    var year = new Year(2015);  //with will result in year = Year {year: 2016}
+    expect(year.isLeap()).toBe(false); //
   });
 
   it('is introduced every 4 years to adjust about a day', function () {

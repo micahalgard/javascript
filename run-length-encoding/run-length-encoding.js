@@ -1,37 +1,57 @@
-var rle = (function () {
-    var decode = function (input) {
-        var repeat = /^\d+/.exec(input), character;
-        if (repeat === null) {
-            return "";
+function boobs(){
+   var RLE = "";
+    return RLE
+}
+
+module.exports = {
+    encode: function(){
+        if(RLE = ''){
+            return "sup"
+        }else{
+            return ""
         }
+    }
+};
+// let RLE = {
+//     encode: function()
+//     decode: function()
+//     .encode('')
+// }
 
-        repeat = repeat[0];
-        character = input[repeat.length];
-        return new Array(+repeat + 1).join(character) + decode(input.substr((repeat + character).length));
-    };
+// var RLE = (function () {
+//     var decode = function (input) {
+//         var repeat = /^\d+/.exec(input), character;
+//         if (repeat === null) {
+//             return "";
+//         }
 
-    return {
-        encode: function (input) {
-            var i = 0, j = input.length, output = "", lastCharacter, currentCharCount;
-                for (; i < j; ++i) {
-                    if (typeof lastCharacter === "undefined") {
-                        lastCharacter = input[i];
-                        currentCharCount = 1;
-                        continue;
-                    }
+//         repeat = repeat[0];
+//         character = input[repeat.length];
+//         return new Array(+repeat + 1).join(character) + decode(input.substr((repeat + character).length));
+//     };
+
+//     return {
+//         encode: function (input) {
+//             var i = 0, j = input.length, output = "", lastCharacter, currentCharCount;
+//                 for (; i < j; ++i) {
+//                     if (typeof lastCharacter === "undefined") {
+//                         lastCharacter = input[i];
+//                         currentCharCount = 1;
+//                         continue;
+//                     }
                     
-                    if (input[i] !== lastCharacter) {
-                        output += currentCharCount + lastCharacter;
-                        lastCharacter = input[i];                        
-                        currentCharCount = 1;
-                        continue;
-                    }
+//                     if (input[i] !== lastCharacter) {
+//                         output += currentCharCount + lastCharacter;
+//                         lastCharacter = input[i];                        
+//                         currentCharCount = 1;
+//                         continue;
+//                     }
                     
-                    currentCharCount++; 
-                }
+//                     currentCharCount++; 
+//                 }
 
-                return output + (currentCharCount + lastCharacter);
-        },
-        decode: decode   
-    };    
-}());
+//                 return output + (currentCharCount + lastCharacter);
+//         },
+//         decode: decode   
+//     };    
+// }());

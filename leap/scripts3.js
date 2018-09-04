@@ -1,9 +1,10 @@
 var DnaTranscriber = function () {
-}
+}//DnaTranscriber is an object function
 
-DnaTranscriber.prototype.toRna = function (dnaTranscriber) {
+//assign the function toRna to the prototype of DnaTranscriber
+DnaTranscriber.prototype.toRna = function (dnaTranscriber) {//pass dnaTranscriber through the function
 
-    var splitString = dnaTranscriber.split("");
+    var splitString = dnaTranscriber.split("");//split up the string contained in dna into an array, assign it to split string
 
     for(i=0; i<splitString.length; i++) {
 
@@ -25,5 +26,5 @@ DnaTranscriber.prototype.toRna = function (dnaTranscriber) {
     return joinArray;
 }
 
-    let dnaTranscriber = new DnaTranscriber();
-    console.log(dnaTranscriber.toRna("ACGTGGTCTTAA")); 
+    let dnaTranscriber = new DnaTranscriber();//assign dnaTranscriber to a new instannce od DnaTranscriber
+    console.log(dnaTranscriber.toRna("ACGTGGTCTTAA")); //call the function attached to the object DnaTranscriber, pass those letters through

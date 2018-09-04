@@ -1,10 +1,10 @@
-var DnaTranscriber = function (y) {
-    this.dnaTranscriber = y;
+var DnaTranscriber = function (y) {//assign the object function. pass through y
+    this.dnaTranscriber = y;//assign y to the value of dnaTranscriber
 }
 
-DnaTranscriber.prototype.toRna = function () {
+DnaTranscriber.prototype.toRna = function () {//add the prototype toRna to DnaTranscriber
 
-    var splitString = this.dnaTranscriber.split("");
+    var splitString = this.dnaTranscriber.split("");//split up the value located in dnaTranscriber into an array, assign it to splitString
 
     for(i=0; i<splitString.length; i++) {
 
@@ -26,6 +26,5 @@ DnaTranscriber.prototype.toRna = function () {
     return joinArray;
 }
 
-    let w = new DnaTranscriber("ACGTGGTCTTAA");
-    console.log(w.toRna());
+    let w = new DnaTranscriber("ACGTGGTCTTAA");//assign w to a new instance of DnaTranscriber with that string assigned to the value of the this
 
